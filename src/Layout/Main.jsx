@@ -15,8 +15,8 @@ const Main = () => {
     return (
         <div>
             <Header handleBar={handleBar}></Header>
-            <div className='bg-yellow-400 flex relative duration-500'>
-                <div className={`bg-orange-600 duration-500 ${showDrawer?'h-[100vh] w-[250px] absolute left-0 md:static  ':'relative -left-52 md:static w-0  md:hidden  '}  `}>
+            <div className='bg-yellow-400 flex relative '>
+                <div className={`bg-orange-600  ${showDrawer?'h-[100vh] w-[250px] absolute left-0 md:static  ':'relative -left-52 md:static w-0  md:hidden  '}  `}>
                    <div className='flex flex-col gap-4 font-bold p-5'>
                         <p className=' flex justify-end'> <FaAngleLeft onClick={handleBar} /> </p>
                         <Link to={'/home'}>Home</Link>
